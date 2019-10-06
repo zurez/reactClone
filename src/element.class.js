@@ -2,26 +2,26 @@ class ElementNode {
 
     
 
-    constructor( node, childrenNodes = []) {
+    constructor( node, childNodes = []) {
         this.id = node.id;
-        this.elementType = node.elementType;
-        this.elementAttributes = node.elementAttributes;
-        this.childrenNodes = childrenNodes;
+        this.type = node.type;
+        this.attributes = node.attributes;
+        this.childNodes = node.childNodes;
     }
 
   
     getElement(){
         return {
             id: this.id,
-            elementType: this.elementType,
-            elementAttributes: this.elementAttributes,
-            childrenNodes: this.childrenNodes
+            type: this.type,
+            attributes: this.attributes,
+            childNodes: this.childNodes
 
         }
     }
     
     addChildren( childrenNode ) {
-        this.childrenNodes.push(childrenNode);
+        this.childNodes.push(childrenNode);
     }
 }
 

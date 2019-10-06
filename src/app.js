@@ -17,7 +17,8 @@ const elements = new Elements();
 elements.addToNode(node);
 
 function run(){
-    render()
+    console.log({node,elements})
+    render(node);
 }
 
 export {
